@@ -7,16 +7,6 @@ const io = new Server(server);
 const path = require('path')
 const Pool = require('pg-pool')
 
-const pool = new Pool({
-  host: 'localhost',
-  port: 5432,
-  user: 'postgres',
-  database:'librarymanagementsystem',
-  password:'mysecretpassword',
-  max: 20,
-  idleTimeoutMillis: 30000,
-  connectionTimeoutMillis: 2000,
-})
 
 app.get('/', async(req, res) => {
   try {
